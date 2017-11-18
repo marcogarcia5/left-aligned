@@ -1,0 +1,1159 @@
+@charset "utf-8";
+
+/* COMMON NUMBERS
+
+20pt = 1.25em
+24pt = 1.5em
+36pt = 2.25em
+48pt = 3em
+72pt = 4.5em
+
+END COMMON NUMBERS */
+
+/* RESETS */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 100%;
+}
+
+/* END RESETS */
+
+/* DEVO
+
+body, header, main, article, section, aside, footer {
+	border: 1px solid red;
+}
+
+ END DEVO */
+
+/* RESPONSIVE RESET */
+
+html {
+    -webkit-text-size-adjust: non;
+}
+
+@-ms-viewport,
+@viewport {
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+
+/* END RESPONSIVE RESET */
+
+/* HTML5 OUTLINE */
+
+.outline-hidden {
+  display: none;
+}
+
+/* END HTML5 OUTLINE */
+
+/* TYPE */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: "Dosis", sans-serif;
+    font-weight: 500;
+    font-size: 2.25em;
+    line-height: 1em;
+}
+
+h2 {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+  font-size: 2.0em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+    font-family: "Dosis", sans-serif;
+}
+
+p {
+  line-height: 1.25em;
+}
+
+/* END TYPE */
+
+/* LAYOUT */
+
+  /* PARALLAX */
+
+  .parallax-window {
+  	width: 100%;
+  	background: transparent;
+  }
+
+  /* END PARALLAX */
+
+/* HEADER */
+
+header {
+    width: 100%;
+    background-color: #FFF;
+    overflow: hidden;
+}
+
+.logo {
+    display: block;
+    float: left;
+    padding: 20px;
+}
+
+.utility img {
+    display: inline-block;
+    float: right;
+    padding: 20px 20px 0 0;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.utility img:hover,
+.utility img:focus {
+    opacity: 1;
+}
+
+  /* MENU-BUTTON */
+
+    button.accordion {
+    	float: right;
+    	clear: right;
+    	margin: 60px 20px 20px 0;
+    	padding: 0 5px 2px 5px;
+    	font-size: 1.25em;
+    	color: #999;
+    	background-color: #FFF;
+    	border: 2px solid #999;
+    	border-radius: 3px;
+    	transition: 0.5s;
+    	display: none;
+    }
+
+    button.accordion.active,
+    button.accordion:hover,
+    button.accordion:focus {
+    	cursor: pointer;
+    	color: #000;
+    	border: 2px solid #000;
+    	outline: none;
+    }
+
+  /*  END MENU-BUTTON */
+
+header nav {
+    clear: right;
+    float: right;
+}
+
+header nav li {
+    font-family: "Dosis", sans-serif;
+    font-size: 1.5em;
+    margin-top: 50px;
+    display: inline-block;
+    background-color: #FFF;
+    transition: 0.5s;
+}
+
+header nav li a {
+    display: block;
+    padding: 20px;
+    color: #666;
+    transition: 0.5s;
+}
+
+header nav li:hover,
+header nav li:focus,
+#alex .port-nav,
+#cafe .port-nav,
+#pcc .port-nav,
+#left .port-nav,
+#concept .serv-nav,
+#responsive .serv-nav,
+#design .serv-nav,
+#research .serv-nav {
+    background-color: #666;
+}
+
+header nav li a:hover,
+header nav li a:focus,
+#alex .port-nav a,
+#cafe .port-nav a,
+#pcc .port-nav a,
+#left .port-nav a,
+#concept .serv-nav a,
+#responsive .serv-nav a,
+#design .serv-nav a,
+#research .serv-nav a {
+    color: #FFF;
+}
+
+/* END HEADER */
+
+/* INDEX */
+
+#spot-mobile {
+    display: none;
+}
+
+article {
+    width: 83.673%;
+    margin: 20px auto;
+}
+
+#portfolio,
+#services {
+    opacity: 0;
+    transition: 0.8s;
+}
+
+#portfolio.show,
+#services.show {
+    opacity: 1;
+}
+
+#portfolio div {
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 48.78%;
+}
+
+#portfolio img {
+    display: block;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#portfolio img:hover,
+#portfolio img:focus {
+    opacity: 1;
+}
+
+.alex {
+    background-image: url(../images/alex.jpg);
+    float: left;
+}
+
+.cafe {
+    background-image: url(../images/cafe.jpg);
+    float: right;
+}
+
+.pcc {
+    clear: both;
+    background-image: url(../images/pcc.jpg);
+    float: left;
+}
+
+.lt-aligned {
+    background-image: url(../images/lt-aligned.jpg);
+    float: right;
+}
+
+#services {
+    clear: both;
+    background-color: #FFF;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.process {
+    float: right;
+    width: 36.585%;
+    color: #CCC;
+}
+
+.process img {
+    display: block;
+    float: left;
+    width: 36%;
+}
+
+.process ul {
+    display: block;
+    float: right;
+    width: 55%;
+    line-height: 1.5em;
+}
+
+.process ul,
+.process p {
+    color: #999;
+}
+
+.process h1,
+.process p {
+    clear: both;
+}
+
+.process h1 {
+    color: #666;
+    padding-top: 40px;
+    font-weight: 500;
+    font-size: 2.25em;
+}
+
+.tools {
+    float: left;
+    width: 56.097%;
+}
+
+.tools div {
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.tools img {
+    display: block;
+    width: 100%;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.concept {
+    background-image: url(../images/concept-to-launch.jpg);
+    display: block;
+    float: left;
+    width: 47.826%;
+    padding-bottom: 20px;
+}
+
+.responsive {
+    background-image: url(../images/responsive.jpg);
+    display: block;
+    float: right;
+    width: 47.826%;
+    padding-bottom: 20px;
+}
+
+.design {
+    background-image: url(../images/design-tools.jpg);
+    display: block;
+    clear: both;
+    float: left;
+    width: 47.826%;
+}
+
+.research {
+    background-image: url(../images/user-research.jpg);
+    display: block;
+    float: right;
+    width: 47.826%;
+}
+
+.tools img:hover,
+.tools img:focus {
+    box-shadow: 5px 5px 20px #666;
+    opacity: 1;
+}
+
+.process p {
+    padding: 20px 20px 0 0;
+    line-height: 1.25;
+}
+
+/* END INDEX */
+
+/* PORTFOLIO NAV */
+
+#port-nav {
+    width: 100%;
+    display: block;
+    padding: 20px;
+    background-color: #FFF;
+    overflow: hidden;
+}
+
+#port-nav li {
+    display: inline-block;
+    float: left;
+    margin: 0 5px;
+    width: 24%;
+    background-color: #FFF;
+    transition: 0.5s;
+}
+
+#port-nav li:hover,
+#port-nav li:focus,
+#alex #alexNav,
+#cafe #cafeNav,
+#pcc #pccNav,
+#left #leftNav {
+  cursor: pointer;
+  box-shadow: 5px 5px 10px #666;
+}
+
+#port-nav a,
+#port-nav img {
+    display: block;
+    margin: 0 auto;
+}
+
+#port-nav img {
+  width: 70%;
+}
+
+/* END PORTFOLIO NAV */
+
+/* PORTFOLIO GLOBAL */
+
+#alex article nav li,
+#cafe article nav li,
+#pcc article nav li,
+#left article nav li {
+  float: left;
+  width: auto;
+  box-shadow: none;
+  font-size: 1.5em;
+  padding: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  transition: 0.5s;
+}
+
+#alex article nav li:first-of-type,
+#cafe article nav li:first-of-type,
+#pcc article nav li:first-of-type,
+#left article nav li:first-of-type {
+  padding-right: 40px;
+}
+
+#alex article nav li:last-of-type,
+#cafe article nav li:last-of-type,
+#pcc article nav li:last-of-type,
+#left article nav li:last-of-type {
+  float: right;
+}
+
+#alex article nav li:hover,
+#alex article nav li:focus,
+#cafe article nav li:hover,
+#cafe article nav li:focus,
+#pcc article nav li:hover,
+#pcc article nav li:focus,
+#alex #overview-nav.active,
+#alex #highlights-nav.active,
+#cafe #overview-nav.active,
+#cafe #highlights-nav.active,
+#pcc #overview-nav.active,
+#pcc #highlights-nav.active {
+  cursor: pointer;
+  text-shadow: 5px 5px 10px #666;
+}
+
+#alex article section,
+#cafe article section,
+#pcc article section,
+#left article section {
+  display: none;
+  padding: 20px;
+}
+
+/* END PORTFOLIO GLOBAL */
+
+/* ALEX */
+
+#alex article,
+#cafe article {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #FFF;
+  overflow: hidden;
+}
+
+#alex article h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  padding: 20px 0 20px 0;
+  clear: left;
+}
+
+#alex article section p,
+#cafe article section p {
+  font-size: 1.25em;
+  padding-bottom: 20px;
+}
+
+.port-logo {
+  width: 100%;
+}
+
+.port-logo img {
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+}
+
+#alex article nav li a {
+  color: #000;
+}
+
+.port-image,
+.popup-gallery {
+  display: block;
+  float: right;
+  clear: right;
+  width: 45%;
+  max-width: 300px;
+  padding: 20px;
+}
+
+#alex #overview img {
+  max-width: none;
+}
+
+.popup-gallery {
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+
+.popup-gallery:hover,
+.popup-gallery:focus {
+  cursor: pointer;
+  box-shadow: 5px 5px 10px #666;
+}
+
+.popup-gallery img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
+}
+
+.popup-gallery .hidden {
+  display: none;
+}
+
+/* END ALEX */
+
+/* CAFE */
+
+#cafe .port-logo {
+  background-color: #633;
+}
+
+#cafe .port-logo img {
+  padding: 20px 0;
+}
+
+#cafe article nav {
+  background-color: #666;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+#cafe article nav li,
+#cafe article nav li a {
+  color: #CCC;
+  transition: 0.5s;
+}
+
+#cafe article nav li:hover,
+#cafe article nav li:focus,
+#cafe article nav li a:hover,
+#cafe article nav li a:focus,
+#cafe #overview-nav.active,
+#cafe #highlights-nav.active {
+  color: #FFF;
+  text-shadow: 5px 5px 10px #000;
+}
+
+#cafe article h2 {
+  font-family: 'Caudex', serif;
+  font-weight: 400;
+  padding: 20px 0 20px 0;
+  clear: left;
+}
+
+#cafe .port-image {
+  width: 45%;
+}
+
+#cafe #overview .port-image {
+  width: 30%;
+}
+
+#cafe .flexslider {
+  margin: 20px auto 0 auto;
+  width: 70%;
+}
+
+#cafe .italic {
+  font-style: italic;
+  font-size: 0.875em;
+}
+
+/* END CAFE */
+
+/* PCC */
+
+#pcc article {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FFF;
+  overflow: hidden;
+}
+
+#pcc .port-logo {
+  background-color: #FFF;
+}
+
+#pcc article nav {
+  background-color: #CC9;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+#pcc article nav li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+#pcc article nav li a {
+  color: #000;
+}
+
+#pcc section#overview h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  padding-bottom: 20px;
+  color: #669;
+}
+
+#pcc article section p,
+#left article section p {
+  font-size: 1em;
+  padding-bottom: 20px;
+}
+
+/* END PCC */
+
+/* LEFT */
+
+#left article {
+  background-color: #FFF;
+}
+
+#left article div {
+  overflow: hidden;
+}
+
+#left .port-logo {
+  background-color: #966;
+}
+
+#left .port-logo img {
+  padding: 20px;
+}
+
+#left article nav {
+  background-color: #666;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+#left article nav li,
+#left article nav li a {
+  font-family: "Dosis", sans-serif;
+  color: #CCC;
+}
+
+#left article nav li:first-of-type {
+  padding-right: 20px;
+}
+
+#left article nav li:hover,
+#left article nav li:focus,
+#left article nav li a:hover,
+#left article nav li a:focus,
+#left #overview-nav.active,
+#left #highlights-nav.active {
+  cursor: pointer;
+  color: #FFF;
+  background-color: #999;
+  text-shadow: 5px 5px 10px #333;
+}
+
+#left article h2 {
+  padding-bottom: 20px;
+}
+
+/* END LEFT */
+
+/* SERVICES NAV */
+
+#serv-nav {
+    width: 100%;
+    display: block;
+    padding: 20px 0;
+    background-color: #FFF;
+    overflow: hidden;
+}
+
+#serv-nav div {
+    display: block;
+    float: left;
+    margin: 0 20px;
+    width: 21%;
+    background-color: #FFF;
+    transition: 0.5s;
+}
+
+#serv-nav div:hover,
+#serv-nav div:focus,
+#concept #conceptNav,
+#responsive #responsiveNav,
+#design #designNav,
+#research #researchNav {
+  cursor: pointer;
+  box-shadow: 5px 5px 10px #666;
+}
+
+#serv-nav img {
+    display: block;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#serv-nav img:hover,
+#serv-nav img:focus,
+#concept #conceptNav img,
+#responsive #responsiveNav img,
+#design #designNav img,
+#research #researchNav img {
+  opacity: 1;
+}
+
+#conceptNav {
+  background-image: url(../images/concept-to-launch.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#responsiveNav {
+  background-image: url(../images/responsive.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#designNav {
+  background-image: url(../images/design-tools.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#researchNav {
+  background-image: url(../images/user-research.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* END SERVICES NAV */
+
+/* SERVICES GLOBAL */
+
+#concept article,
+#responsive article,
+#design article,
+#research article {
+  background-color: #FFF;
+  padding: 20px;
+  overflow: hidden;
+}
+
+#concept h1,
+#responsive h1,
+#design h2,
+#research h1 {
+  padding-bottom: 20px;
+}
+
+#concept p,
+#responsive p,
+#design p,
+#research p {
+  padding-bottom: 20px;
+}
+
+/* END SERVICES GLOBAL */
+
+/* CONCEPT */
+
+#concept article a {
+  display: block;
+  margin: 20px auto;
+  width: 50%;
+}
+
+#concept article img {
+  display: block;
+  width: 100%;
+  opacity: 0.85;
+  transition: 0.5s;
+}
+
+#concept article img:hover,
+#concept article img:focus {
+  opacity: 1.0;
+  box-shadow: 5px 5px 10px #666;
+}
+
+/* END CONCEPT */
+
+/* RESPONSIVE (SERVICES) */
+
+#responsive article div.respond {
+  margin: 0 auto;
+  background-color: #CCC;
+  color: #FFF;
+  padding: 20px;
+  width: 80%;
+  overflow: hidden;
+}
+#responsive article div.respond img {
+  display: block;
+  margin: 20px auto;
+}
+
+#responsive article div.respond img.left {
+  float: left;
+  width: 48.4%;
+  clear: left;
+}
+
+#responsive article div.respond img.right {
+  float: right;
+  width: 48.4%;
+  clear: right;
+}
+
+#responsive article div.respond img.full {
+  padding-top: 20px;
+  width: 80%;
+}
+
+#responsive article div.respond img:last-of-type {
+  padding-left: 20px;
+}
+
+#responsive article div.respond h2 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+/* END RESPONSIVE */
+
+/* DESIGN */
+
+#design article div {
+  clear: both;
+}
+
+#design .flexslider {
+  width: 70%;
+  margin: 20px auto;
+}
+
+#design .flexslider img {
+  display: block;
+  width: 100%;
+}
+
+/* END DESIGN */
+
+/* RESEARCH */
+
+#research article div.research-main {
+  display: block;
+  overflow: hidden;
+}
+
+#research article div nav {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+#research article div ul {
+  display: block;
+  width: 50%;
+}
+
+#research article div ul:first-of-type {
+  float: left;
+}
+
+#research article div ul:last-of-type {
+  float: right;
+}
+
+#research article div li {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #FFF;
+  color: #666;
+  transition: 0.5s;
+}
+
+#research article div li a {
+  color: #666;
+  transition: 0.5s;
+}
+
+#research article div li:hover,
+#research article div li:focus,
+#research article div li.active {
+  background-color: #666;
+  color: #CCC;
+  cursor: pointer;
+}
+
+#research article div li a:hover,
+#research article div li a:focus,
+#research article div li a.active {
+  color: #CCC;
+}
+
+#research article div h2 {
+  font-size: 1.5em;
+}
+
+#research article div.report {
+  display: none;
+  width: 100%;
+}
+
+#research article div.report img {
+  display: block;
+  width: 100%;
+}
+
+#research article div#recorded p {
+  clear: both;
+  width: 80%;
+  font-style: italic;
+  padding: 0;
+  margin: 20px auto 0 auto;
+}
+
+#research article div.embed-container {
+  position: relative;
+  clear: both;
+  margin: 20px auto;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  width: 80%;
+}
+
+#research article div.embed-container iframe,
+#research article div.embed-container object,
+#research article div.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* END RESEARCH */
+
+/* THX */
+
+#thx main article {
+  width: 60%;
+  padding: 20px;
+  background-color: #FFF;
+}
+
+#thx main article h1,
+#thx main article p:first-of-type {
+  padding-bottom: 20px;
+}
+
+/* END THX */
+
+/* FOOTER */
+
+article#me {
+    width: 100%;
+    background-image: url(../images/contact-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 20px;
+    margin: 0;
+    color: #FFF;
+    overflow: hidden;
+}
+
+article#me section {
+    float: left;
+    width: 38.775%;
+    display: block;
+    font-family: "Dosis", sans-serif;
+    display: block;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    overflow: hidden;
+}
+
+article#me section p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  padding-bottom: 20px;
+}
+
+article#me section p:last-of-type {
+  padding-bottom: 0;
+}
+
+article#me section h1 {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+  padding: 0 0 20px 0;
+}
+
+#contact {
+    float: right;
+    width: 57.14%
+}
+
+#contact input,
+#contact textarea {
+    display: block;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    outline: none;
+    border: 3px solid #FFF;
+    transition: 0.3s;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    border: 3px solid #666;
+}
+
+#contact input[type=text],
+#contact input[type=email],
+#contact input[type=submit] {
+    width: 39.29%;
+    height: 36px;
+}
+
+#contact input[type=text],
+#contact input[type=email] {
+    padding-left: 20px;
+}
+
+#contact textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px 0 0 20px;
+}
+
+#contact input[type=submit] {
+    color: #FFF;
+    background-color: #999;
+    margin: 20px 0 0 0;
+    border: none;
+    transition: 0.3s;
+}
+
+#contact input[type=submit]:hover {
+    background-color: #666;
+    box-shadow: 5px 5px 10px #333;
+    cursor: pointer;
+}
+
+#contact input[type=submit]:active {
+    background-color: #999;
+    box-shadow: 5px 5px 10px #666;
+}
+
+footer {
+    padding: 20px;
+    width: 100%;
+    background-color: #FFF;
+    overflow: hidden;
+}
+
+footer div {
+    float: right;
+    width: 49%;
+    padding-right: 60px;
+}
+
+footer img {
+    display: inline-block;
+    float: right;
+    margin: auto;
+    padding-right: 20px;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+footer img:hover,
+footer img:focus {
+    opacity: 1;
+}
+
+footer p {
+    float: left;
+    width: 49%;
+    padding-top: 20px;
+}
+
+/* END FOOTER */
+
+/* BACK-TO-TOP */
+a.back-to-top {
+	text-decoration: none;
+	font-size: 1.5em;
+	color: #FFF;
+	background-color: #333;
+	opacity: 0.7;
+	padding: 8px 10px 10px 10px;
+	border-radius: 15px;
+	position: fixed;
+	z-index: 999;
+	right: 40px;
+	bottom: 20px;
+	display: none;
+    }
+
+    a.back-to-top:hover,
+    a.back-to-top:focus {
+	opacity: 1;
+    }
+
+/* END LAYOUT */

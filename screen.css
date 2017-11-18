@@ -1,0 +1,359 @@
+@charset "utf-8";
+
+/* Screen Width */
+
+@media screen and (max-width: 1200px) {
+    #contact input,
+    #contact textarea {
+        font-size: 1.0em;
+    }
+
+    #contact input[type=text],
+    #contact input[type=email],
+    #contact input[type=submit] {
+        height: 30px;
+    }
+
+    #contact textarea {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    #port-nav li {
+      width: 23%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .process h1 {
+        padding-top: 20px;
+        font-size: 2em;
+    }
+
+    .process p,
+    .process ul {
+        font-size: 0.75em;
+    }
+
+    #cafe #overview .port-image {
+      width: 45%;
+    }
+
+    #serv-nav div {
+      width: 20%;
+    }
+
+    #responsive article div.respond img:last-of-type {
+      width: 60%;
+    }
+
+    article#me {
+        padding: 0;
+    }
+
+    article#me section {
+        float: none;
+        background-color: #699;
+        width: 100%;
+        padding: 20px;
+    }
+
+    #contact {
+        float: none;
+        width: 100%;
+        background-image: url(../images/contact-background-1000.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding: 20px;
+        font-size: 1.5em;
+        line-height: 36px;
+    }
+
+    #contact input[type=text],
+    #contact input[type=email],
+    #contact input[type=submit] {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .port-image,
+    .popup-gallery {
+      width: 50%;
+    }
+
+    #serv-nav div {
+      width: 19%;
+    }
+
+    #responsive article div.respond {
+      width: 100%;
+    }
+
+    #thx main article {
+      width: 80%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header nav li {
+        font-size: 1.25em;
+    }
+    .process {
+        float: none;
+        width: 100%;
+    }
+
+    .process div {
+        display: none;
+    }
+
+    .process h1 {
+        padding: 0;
+    }
+
+    .process p {
+        padding-bottom: 20px;
+        font-size: 1em;
+    }
+
+    .tools {
+        float: none;
+        width: 100%;
+    }
+
+    #portfolio div {
+        width: 80%;
+        margin: 0 auto 20px auto;
+        float: none;
+    }
+
+    #portfolio img {
+        float: none;
+    }
+
+    .port-logo img {
+      width: 50%;
+    }
+
+    #left div.port-logo img {
+      width: 40%;
+    }
+
+    .port-image,
+    .popup-gallery {
+      float: none;
+      width: 70%;
+      padding: 20px 0;
+      margin: 0 auto;
+    }
+
+    #cafe .port-image,
+    #cafe #overview .port-image {
+      width: 70%;
+    }
+
+    #port-nav img {
+      width: 90%;
+    }
+
+    #serv-nav div {
+      width: 18%;
+    }
+
+    #alex article h2 {
+      padding-top: 0;
+    }
+
+    #alex article nav li,
+    #pcc article nav li,
+    #left article nav li {
+      font-size: 0.85em;
+    }
+
+    #concept article a,
+    #research article a {
+      width: 70%;
+    }
+
+    footer div {
+        float: none;
+        width: 100%;
+    }
+
+    footer img {
+        float: none;
+        margin: auto;
+    }
+
+    footer p {
+        float: none;
+        width: 100%;
+        clear: both;
+    }
+}
+
+@media screen and (max-width: 572px) {
+    button.accordion {
+        display: block;
+    }
+
+    div.panel {
+    	clear: both;
+    	max-height: 0;
+    	overflow: hidden;
+    	transition: 0.7s ease-in-out;
+    	opacity: 0;
+    }
+
+    div.panel.show {
+    	opacity: 1;
+    	max-height: 1000px;
+    	display: block;
+    }
+
+    header nav {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        text-align: right;
+    }
+
+    header nav li {
+        display: block;
+        float: right;
+        clear: right;
+        margin: 0;
+        padding: 0
+    }
+
+    header nav li:last-of-type {
+        margin-bottom: 20px;
+    }
+
+    header nav li a {
+        padding: 5px 20px;
+    }
+
+    #spot {
+        display: none;
+    }
+
+    #spot-mobile {
+        display: block;
+    }
+
+    #portfolio div {
+        width: 100%;
+    }
+
+    #port-nav li {
+      width: 22%;
+    }
+
+    #port-nav img {
+      width: 100%;
+    }
+
+    #serv-nav div {
+      width: 21%;
+      margin: 0 10px;
+    }
+
+    #left div.port-logo img,
+    #pcc div.port-logo img {
+      width: 60%;
+    }
+
+    #alex article nav li,
+    #cafe article nav li,
+    #pcc article nav li,
+    #left article nav li {
+      display: block;
+      float: none;
+      width: 100%;
+      padding: 10px 0;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    #pcc article nav li {
+      font-size: 0.75em;
+    }
+
+    #alex article nav li:first-of-type,
+    #cafe article nav li:first-of-type,
+    #pcc article nav li:first-of-type,
+    #left article nav li:first-of-type {
+      padding: 10px 0;
+    }
+
+    #concept main h1,
+    #responsive main h1,
+    #design main h1,
+    #research main h1 {
+      font-size: 1.75em;
+    }
+
+    #responsive article div.respond img.left,
+    #responsive article div.respond img.right {
+      float: none;
+      width: 80%;
+    }
+
+    #responsive article div.respond img.full,
+    #responsive article div.respond img:last-of-type {
+      padding: 0;
+    }
+
+    #research article div li h2 {
+      font-size: 1.25em;
+    }
+
+    #contact {
+        background-image: url(../images/contact-background-560.jpg);
+        padding-top: 60px;
+    }
+
+    #contact input[type=text],
+    #contact input[type=email],
+    #contact input[type=submit] {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+  #serv-nav div {
+    width: 19%;
+  }
+
+  #responsive article div.respond img.left,
+  #responsive article div.respond img.right,
+  #responsive article div.respond img.full {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+    button.accordion {
+        margin-top: 130px;
+    }
+
+    .utility img {
+        display: none;
+    }
+
+    #port-nav li {
+      width: 21%;
+    }
+
+    #serv-nav div {
+      margin: 0 4px;
+      width: 22%;
+    }
+
+    #cafe div.port-logo img {
+      width: 60%;
+    }
+}
